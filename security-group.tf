@@ -1,5 +1,5 @@
 resource "aws_security_group" "ecs_sg_public" {
-  name        = "ecs_alb_sg"
+  name        = "ecs_sg_public"
   description = "Allow access from internet"
   vpc_id      = aws_vpc.ecs_vpc.id
 
