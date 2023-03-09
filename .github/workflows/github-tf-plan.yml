@@ -15,10 +15,10 @@ jobs:
     env:
       TF_WORKING_DIR: 'ecs'
 
-    defaults:
-      run:
-        shell: bash
-        working-directory: ${{ env.TF_WORKING_DIR }}
+    # defaults:
+    #   run:
+    #     shell: bash
+    #     working-directory: ${{ env.TF_WORKING_DIR }}
 
     steps:
       - name: Checkout
