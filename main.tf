@@ -6,7 +6,13 @@ terraform {
       version = "4.2.0"
     }
   } 
-  backend "s3" {}
+  backend "s3" {
+    encrypt        = false
+    bucket         = "backend-tfstate-gha"
+    key            = "dev/terraform.tfstate"
+    region         = "us-east-1"
+    dynamodb_table = "tflock-tfstate-gha"
+  }
 }
 
 
