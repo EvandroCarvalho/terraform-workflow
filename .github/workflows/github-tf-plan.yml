@@ -13,7 +13,7 @@ jobs:
     name: "terraform dev"
     runs-on: ubuntu-latest
     env:
-      TF_WORKING_DIR: 'ECS-TERRAFORM'
+      TF_WORKING_DIR: 'ecs'
 
     defaults:
       run:
